@@ -30,10 +30,17 @@ window.onload=()=>{
 	}
 	screen.innerHTML=""
 	topbar()
+	bottombar()
 }
 
 function topbar() {
 	screen.innerHTML+="\n \u250C\u2500\u2500guruCHAT"
 	for (i=0;i<screenX-14;i++) screen.innerHTML+="\u2500"
 	screen.innerHTML+="\u2510"
+}
+
+function bottombar() {
+	screen.innerHTML+="\n \u2514"
+	for (i=0;i<screenX-29;i++) screen.innerHTML+="\u2500"
+	screen.innerHTML+="press\u2500ESC\u2500to\u2500leave\u2500chat\u2500\u2500\u2518"
 }
